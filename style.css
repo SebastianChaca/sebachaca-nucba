@@ -1,0 +1,182 @@
+body, html {
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #fcdab7;
+}
+
+
+
+ul{
+    width:100%;
+    height: 100%;
+    display:grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap:10px;
+    padding:0;
+    
+       
+    
+}
+
+li{
+    list-style:none;
+    
+}
+
+.nav__a{
+    color:white;
+    text-align: center;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 5px;
+    
+}
+
+
+.container{
+    background: linear-gradient(90deg, #a11550  0%, #ff698c 100% );
+    order: 1px solid black ;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    position: absolute;
+    top:0;
+    width: 100%;
+    height:15%;
+    
+        
+}
+
+.navbar{
+    margin:0;
+    width:100%;
+     
+    
+}
+
+
+#portada{
+    padding:0;
+    margin:0;
+    width: 100%;
+    /* border: 1px solid black ; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    
+}
+#logo{
+    width: 60px;
+    height: 45px;
+    margin-left: 10px;
+    
+    
+        
+}
+
+
+
+/* Container de todas las Cartas */
+.cards{
+    padding: 15px 0 25px 0;
+    margin: auto;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    /* gap: 5px; */
+    
+}
+/* Container de carta individual */
+.card {
+    margin: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
+    border: 4px solid black;
+    background-color: #da0657;
+    outline: 4px inset #515568
+    
+
+}
+
+/* Container de imagen de carta */
+
+.card__image{
+    padding:0%;
+    margin:0%;
+    width: 100%;
+    display:block;
+       
+}
+
+/* Container de texto */
+
+.card__text {
+    /* padding: 2px 16px; */
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color:#faf3dd;
+    font-size: 20px;
+    
+}
+
+h4{
+    text-shadow: 4px 2px black;
+    
+}
+
+/* VIDEOS YOUTUBE */
+.youtube{
+    display: flex;
+    align-content: center;
+    justify-content:center ;
+    margin: 20px;
+    
+    
+}
+
+.descripcion{
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 20px;
+    
+
+
+    
+}
+
+/* Hovers */
+.card:hover {
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,2);
+    transform: translateY(-7px) translateX(3px);
+   
+}
+
+a:active, a:hover{
+    color: black;
+}
+
+/* Queries */
+
+@media screen and (max-width: 500px) {
+   
+    ul{
+        display:block;
+    }
+    li{
+        width:100%;
+        height:50%;
+        
+    }
+    .cards{
+        display:block;
+        margin:5px;
+        
+    }
+    .card{
+        max-width: 40%;
+    }
+    
+}
