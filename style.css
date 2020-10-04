@@ -51,7 +51,8 @@ li{
     position: fixed;
     top:0;
     width: 100%;
-    height:20%;
+    height:100px;
+    z-index: 100;
     
         
 }
@@ -68,8 +69,10 @@ li{
     padding:0;
     margin:0;
     width: 100%;
-    /* border: 1px solid black ; */
+    height: 350px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    object-fit: cover;
+    
     
     
 }
@@ -139,7 +142,21 @@ h1{
     align-items: center;
     text-decoration: none;
     font-size: 50px;
-    margin-top: 50px;
+    
+}
+
+h3{
+    color:white;
+    text-align: center;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 35px;
+    margin:15px;
+    
+
 }
 
 /* VIDEOS YOUTUBE */
@@ -155,16 +172,85 @@ h1{
 .descripcion{
     margin:  auto;
     max-width: 700px;
-    padding: 30px;    
+    padding: 20px;    
 }
 
 /* seccion que es el power nine */
 #sec-2{
-    height: 120vh;
-    /* background-color: #ffd57e; */
+    /* height: 100vh; */
+    padding-bottom: 50px;
+    
     background-color: #edc988;
     
+    z-index: -1;
     
+    
+}
+
+#sec-3{
+    
+    padding: 15px 0 25px 0;
+    
+    background-color: #edc988;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* z-index: -1; */
+}
+
+.contacto{
+    width: 320px;
+    height: 450px;
+    padding: 20px;
+    background-color: #f8efd4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+   
+    
+}
+}
+label{
+    width: 100%;
+    font-size: 20px;
+    
+    
+}
+input{
+    width:100%;
+    height: 40px;
+    border:none;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 15px;
+    
+}
+button{
+    width:100%;
+    height: 50px;    
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #133b5c;
+    color:white;
+    font-size: 15px;
+}
+
+textarea{
+    width:100%;
+    
+    border:none;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 15px;
 }
 
 
@@ -280,16 +366,16 @@ footer{
     }
     li{
         width:100%;
-        height:55%;
+        height:60%;
         
     }
     #portada{
-        padding-top: 60%;
+        padding-top: 70%;
         /* height: 150px       */
         
     }
     .container{
-        height: 230px;
+        height: 280px;
         width:100%
         
     }
@@ -334,9 +420,10 @@ footer{
        margin-left: 10px;
    }
     #sec-2{
-    height: 190vh;
-    
-    
-    
+    height: 150vh;
+    }
+    .contacto{
+        width:250px;
+    }
 }
-}
+
